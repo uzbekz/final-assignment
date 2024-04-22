@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #ff6347;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+}
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.recipe {
+    background: white;
+    border: 1px solid #ddd;
+    margin: 10px;
+    width: calc(50% - 40px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.recipe:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.recipe img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe h2 {
+    margin: 10px;
+}
+
+.recipe p {
+    padding: 0 10px 10px;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .recipe {
+        width: calc(100% - 40px);
+    }
+}
+/*pizza*/
+.ingredients-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.section {
+    background: white;
+    border: 1px solid #ddd;
+    margin: 20px;
+    width: 45%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    overflow: hidden; /* Prevent images from overflowing the div */
+}
+
+.section img {
+    width: 100%; /* Make images span the entire width of the section */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the entire container while maintaining aspect ratio */
+    display: block; /* Make images block level to fill the width */
+}
+
+.section h2 {
+    margin: 20px 0; /* Add some spacing around section headings */
+}
+
+.section p {
+    margin: 10px 0; /* Add some spacing around paragraphs */
+}
+
+.section ol {
+    text-align: left;
+    display: inline-block;
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 90%;
+    }
+}
+/*pizza*/
+/*spaghetti*/
+.section:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.section ol {
+    text-align: left;
+    display: inline-block;
+    margin-left: 0;
+    padding-left: 20px;
+    list-style-type: decimal; /* Set list style to decimal numbering */
+    color: #666; /* Set text color */
+}
+
+.section ol li {
+    margin-bottom: 5px; /* Add some spacing between list items */
+}

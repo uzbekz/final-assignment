@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrambled Eggs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #ff6347;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 40px;
+        }
+        .ingredients-container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section {
+            background: white;
+            border: 1px solid #ddd;
+            margin: 20px;
+            width: 50%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+            overflow: hidden; /* Prevent images from overflowing the div */
+        }
+        .section img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .section ol {
+            text-align: left;
+            display: inline-block;
+            margin-left: 0;
+            padding-left: 20px;
+        }
+        .section:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .section ol {
+            text-align: left;
+            display: inline-block;
+            margin-left: 0;
+            padding-left: 20px;
+            list-style-type: decimal; /* Set list style to decimal numbering */
+            color: #666; /* Set text color */
+        }
+
+.section ol li {
+    margin-bottom: 5px; /* Add some spacing between list items */
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Scrambled Eggs</h1>
+    </header>
+    <div class="ingredients-container">
+        <div class="section">
+            <h2>Ingredients and Cooking</h2>
+            <img src="images/eggs.jpg" alt="Eggs">
+            <p>4 large eggs</p>
+            <img src="images/butter.jpg" alt="Butter">
+            <p>2 tbsp butter</p>
+            <img src="images/salt.jpg" alt="Salt">
+            <p>Salt to taste</p>
+            <img src="images/pepper.jpg" alt="Pepper">
+            <p>Pepper to taste</p>
+            <ol class="instruction">
+                <li>Crack the eggs into a bowl, add salt and pepper, and beat until smooth.</li>
+                <li>Heat butter in a non-stick skillet over medium heat.</li>
+                <li>Pour in the eggs and let them sit, undisturbed, for a few moments.</li>
+                <li>Using a spatula, stir the eggs from the edges to the center, letting the uncooked eggs flow underneath.</li>
+                <li>Cook until the eggs are softly set and slightly runny in places.</li>
+                <li>Remove from heat and let the eggs finish cooking with the residual heat from the pan.</li>
+                <li>Serve immediately with your choice of sides.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
